@@ -14,6 +14,7 @@
 		AB5029D92280C0A0003239F1 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5029D82280C0A0003239F1 /* NotesViewController.swift */; };
 		AB5029DB2280D22A003239F1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5029DA2280D22A003239F1 /* Note.swift */; };
 		AB5029DD2280D281003239F1 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5029DC2280D281003239F1 /* NoteController.swift */; };
+		AB5029DF2280D729003239F1 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5029DE2280D729003239F1 /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AB5029D82280C0A0003239F1 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		AB5029DA2280D22A003239F1 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		AB5029DC2280D281003239F1 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		AB5029DE2280D729003239F1 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				AB5029D82280C0A0003239F1 /* NotesViewController.swift */,
 				AB5029DA2280D22A003239F1 /* Note.swift */,
 				AB5029DC2280D281003239F1 /* NoteController.swift */,
+				AB5029DE2280D729003239F1 /* NoteTableViewCell.swift */,
 			);
 			path = QuickNotes;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				AB5029D92280C0A0003239F1 /* NotesViewController.swift in Sources */,
 				AB5029DD2280D281003239F1 /* NoteController.swift in Sources */,
 				AB5029C72280AB30003239F1 /* AppDelegate.swift in Sources */,
+				AB5029DF2280D729003239F1 /* NoteTableViewCell.swift in Sources */,
 				AB5029DB2280D22A003239F1 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

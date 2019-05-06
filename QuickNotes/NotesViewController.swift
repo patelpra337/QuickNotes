@@ -31,6 +31,8 @@ class NotesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    let noteController = NoteController()
 
     @IBOutlet weak var tablleView: UITableView!
 }
@@ -41,7 +43,7 @@ extension NotesViewController: UITableViewDelegate {
 
 extension NotesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return noteController.notes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
