@@ -20,7 +20,22 @@ class NotesViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
-    }
+        print("Save")
+        
+        // 1.  get the text if it's present
+        // 2.  create a new notes
+        // 3.  update the display
+        
+        // so to get the text use the guard let statement; we are getting the notes out of it
+        guard let text = notesTextView.text, !text.isEmpty else { return }
+        // next create the note, which has a method --> noteController and provide the text
+        noteController.createNote(withText: text)
+        // if we want to see the data, we need to reload the Tableview
+        tablleView.reloadData()
+        
+        notesTextView.text = ""
+            
+        }
     
     /*
     // MARK: - Navigation
@@ -35,6 +50,7 @@ class NotesViewController: UIViewController {
     let noteController = NoteController()
 
     @IBOutlet weak var tablleView: UITableView!
+    @IBOutlet weak var notesTextView: UITextView!
 }
 
 extension NotesViewController: UITableViewDelegate {
@@ -60,7 +76,7 @@ extension NotesViewController: UITableViewDataSource {
         
         // This is the custom class that has those two attributes func and NewNote cell
         noteCell.noteLabel.text = note.text
-        
+        cell.backgroundColor = .yellow
         return cell
     }
     

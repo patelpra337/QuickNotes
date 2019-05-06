@@ -21,6 +21,8 @@ class NoteController {
     func createNote(withText text: String) {
         let note = Note(text: text)
         
+        
+        
         notes.append(note)
     }
 }
