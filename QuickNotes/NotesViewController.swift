@@ -50,7 +50,16 @@ extension NotesViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
         
-        cell.backgroundColor = .yellow
+        // Convert to custom cell - using Guard let
+        guard let noteCell = cell as? NoteTableViewCell else { return cell }
+        
+        // Get the note for the row
+        let note = noteController.notes[indexPath.row]
+        
+        // cell.backgroundColor = .yellow // This block of code was used to test earlier
+        
+        // This is the custom class that has those two attributes func and NewNote cell
+        noteCell.noteLabel.text = note.text
         
         return cell
     }

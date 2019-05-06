@@ -12,6 +12,12 @@ class NoteController {
     
     var notes: [Note] = [] // Create an empty Array of notes
     
+    init() {
+        // Create test data for sanity checks!!!!
+        createNote(withText: "Walk the dog")
+        createNote(withText: "Eat the lunch!")
+    }
+    
     func createNote(withText text: String) {
         let note = Note(text: text)
         
