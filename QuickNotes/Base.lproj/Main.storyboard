@@ -37,6 +37,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrs-zN-tpA">
                                                     <rect key="frame" x="291" y="0.0" width="83" height="139"/>
                                                     <state key="normal" title="Save"/>
+                                                    <connections>
+                                                        <action selector="saveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SiR-CU-6hX"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -94,6 +97,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Quick Notes" largeTitleDisplayMode="always" id="DPH-G4-uYR"/>
+                    <connections>
+                        <outlet property="tablleView" destination="lWF-eV-6Xd" id="dDh-OV-a6G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

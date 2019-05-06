@@ -12,11 +12,16 @@ class NotesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tablleView.delegate = self
+        tablleView.dataSource = self
 
-        // Do any additional setup after loading the view.
+        
     }
     
-
+    @IBAction func saveButtonTapped(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -27,4 +32,26 @@ class NotesViewController: UIViewController {
     }
     */
 
+    @IBOutlet weak var tablleView: UITableView!
+}
+
+extension NotesViewController: UITableViewDelegate {
+    
+}
+
+extension NotesViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
+        
+        cell.backgroundColor = .yellow
+        
+        return cell
+    }
+    
+    
 }
